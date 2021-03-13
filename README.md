@@ -6,7 +6,7 @@ It's used for having NSMenuItems with subtitles!
 
 <img src="https://eternalstorms.at/blog/esssubtitledmenuitemview.png" style="width:395px;" />
 
-Or see it in a video [here](https://eternalstorms.at/blog/esssubtitledmenuitemview.mov).
+Or see it in a video [on my blog](https://blog.eternalstorms.at/2021/03/13/ess-nsmenuitems-with-subtitles/).
 
 ## First, the License Agreement
 
