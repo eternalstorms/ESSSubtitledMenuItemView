@@ -24,7 +24,7 @@ Or see it in a video [here](https://eternalstorms.at/blog/esssubtitledmenuitemvi
 It's very easy, and best explained in this sample Xcode project.
 
 ## Requirements
-This code works on macOS X 10.11 and newer.
+This code works on macOS X 10.11 and newer
 Developed with Xcode 12.4
 
 ## Support
