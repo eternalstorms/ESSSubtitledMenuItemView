@@ -21,7 +21,7 @@ Here it is in a video:
 7) You can’t use my name or other marks to promote your products based on the code.  
 8) If you agree to all of that, go ahead and download the source. Otherwise, don’t.
 
-# How To use ESSVideoShare
+# How To use ESSSubtitledMenuItemView
 
 It's very easy, and best explained in this sample Xcode project.
 
@@ -34,6 +34,6 @@ The framework and code is provided as-is, but if you need help or have suggestio
 
 For other Open Source projects of mine, please visit http://www.eternalstorms.at/opensource
 
-# I want to hear from you
+# Id like to hear from you
 If you use ESSSubtitledMenuItemView in one of your projects, please [let me know](mailto:opensource@eternalstorms.at)!
 I'd love to hear about your apps and mention them here on this project page :) !!
