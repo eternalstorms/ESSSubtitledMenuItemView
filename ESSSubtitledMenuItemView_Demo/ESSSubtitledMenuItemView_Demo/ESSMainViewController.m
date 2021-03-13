@@ -28,6 +28,10 @@
 {
 	NSMenu *men = [[NSMenu alloc] initWithTitle:@""];
 	
+	NSImage *menuItemImage = nil;
+	if (@available(macOS 11.0, *))
+		menuItemImage = [NSImage imageWithSystemSymbolName:@"dot.radiowaves.left.and.right" accessibilityDescription:nil];
+	
 	NSUInteger amount = 10;
 	NSUInteger count = 0;
 	for (count = 0; count < amount; count++)
@@ -40,7 +44,7 @@
 		NSMenuItem *item = [[NSMenuItem alloc] init];
 		item.target = self;
 		item.action = @selector(showAlert:);
-		ESSSubtitledMenuItemView *view = [[ESSSubtitledMenuItemView alloc] initWithTitle:[NSString stringWithFormat:@"Shake %ld time(s)",runningCount] subtitle:[NSString stringWithFormat:@"This will shake the button %ld time(s)",runningCount] image:nil];
+		ESSSubtitledMenuItemView *view = [[ESSSubtitledMenuItemView alloc] initWithTitle:[NSString stringWithFormat:@"Shake %ld time(s)",runningCount] subtitle:[NSString stringWithFormat:@"This will shake the button %ld time(s)",runningCount] image:menuItemImage];
 		item.view = view;
 		
 		[men addItem:item];
