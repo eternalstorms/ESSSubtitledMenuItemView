@@ -43,6 +43,7 @@
 		 */
 		NSMenuItem *item = [[NSMenuItem alloc] init];
 		item.target = self;
+		item.representedObject = @(runningCount);
 		item.action = @selector(showAlert:);
 		ESSSubtitledMenuItemView *view = [[ESSSubtitledMenuItemView alloc] initWithTitle:[NSString stringWithFormat:@"Shake %ld time(s)",runningCount] subtitle:[NSString stringWithFormat:@"This will shake the button %ld time(s)",runningCount] image:menuItemImage];
 		item.view = view;
@@ -77,9 +78,7 @@
 		anim.fromValue = [NSValue valueWithCATransform3D:zRotationMinus];
 		anim.toValue = [NSValue valueWithCATransform3D:zRotation];
 		anim.duration = 0.07;
-		NSString *title = ((ESSSubtitledMenuItemView *)sender.view).title;
-		NSString *numberComponent = [title componentsSeparatedByString:@" "][1]; //don't do this with localized strings. Or, just don't do this ;)
-		NSUInteger number = numberComponent.integerValue;
+		NSUInteger number = ((NSNumber *)sender.representedObject).integerValue;
 		anim.repeatCount = number;
 		anim.removedOnCompletion = YES;
 		anim.autoreverses = YES;
